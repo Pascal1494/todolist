@@ -1,0 +1,109 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #333;
+    color: #f1f1f1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 5vw;
+    margin: 50px 0;
+    text-shadow: 5px 2px 8px rgba(253,12,12,0.6);
+}
+
+.spider {
+  display: flex;
+  justify-content: center;
+   width: 100%;
+}
+.spider img {
+    transform: scale(2);
+    z-index: -10;
+}
+
+form {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    max-width: 1200px;
+    min-width: 400px;
+    z-index: 10;
+}
+
+form label {
+    display: block;
+    font-size: 25px;
+    
+}
+form input {
+    width: 100%;
+    padding: 15px;
+    font-size: 20px ;
+    margin: 10px 0;
+}
+form button {
+    padding: 15px;
+    font-size: 20px;
+}
+.list-todo {
+    list-style: none;
+    margin: 20px auto 0;
+    width: 70%;
+    max-width: 1200px;
+    min-width: 400px;
+ 
+}
+li {
+    font-size: 20px;
+    width: 100%;
+    background: #f1f1f1;
+    display: flex;
+    align-items: center;
+    padding:5px ;
+    color: #333;
+    margin: 5px 0;
+}
+
+li input {
+    width: 40px;
+    height: 40px;
+    margin-left: 15px;
+}
+
+li button {
+    margin-left: auto;
+    padding: 5px;
+}
+button img{
+    width: 40px;
+    pointer-events: none;
+}
+
+li span {
+    font-size: 25px;
+    margin-left: 20px;
+    
+}
+
+li span::first-letter {
+    text-transform: capitalize;
+}
+
+li.finDeTache, li {
+    box-shadow: 10px -3px 22px 0px rgba(252,0,15,0.48);
+    -webkit-box-shadow: 10px -3px 22px 0px rgba(252,0,15,0.48);
+    -moz-box-shadow: 10px -3px 22px 0px rgba(252,0,15,0.48);
+    
+}
+
+
+/* Animation Rayure*/
+li.finDeTache span {
+text-decoration: line-through;
+}
